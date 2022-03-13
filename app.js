@@ -6,6 +6,6 @@ app.get('/', (req, res) => {
 });
 
 const PORT = 3000;
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log('start');
 });
